@@ -58,9 +58,10 @@ syntax keyword bsvKeyword import export
 syntax keyword bsvKeyword typedef enum struct deriving tagged union let
 syntax keyword bsvKeyword package module rule function 
 syntax keyword bsvKeyword instance interface method return action
-syntax keyword bsvKeyword provisos parameter
+syntax keyword bsvKeyword provisos parameter typeclass
+syntax keyword bsvKeyword dependencies determines
 
-syntax keyword bsvScope begin end endpackage endmodule endfunction endinterface endcase endinstance endrule endaction endmethod nextgroup=bsvScopeIdentifier
+syntax keyword bsvScope begin end endpackage endmodule endfunction endinterface endcase endinstance endrule endaction endmethod endtypeclass nextgroup=bsvScopeIdentifier
 syntax match   bsvScopeIdentifier '\v:\S+' contained containedin=bsvScope
 
 " attributes
